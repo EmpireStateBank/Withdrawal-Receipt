@@ -312,58 +312,102 @@
   <script>
     /* --- Data Configuration --- */
     const userPINs = {
-      "Sak88854": "4321",
-      "JaneDoe": "1234",
-      "MikeX": "8422",
-      "AdaOla": "7654"
+      "Emmanuel Ekpa": "3572",
+      "Esther Amos": "4073",
+      "Itohowo Akan": "1313",
+      "Samuel Akpan": "5012",
+      "Samuel Ime": "1226",
+      "Saviour Ekong": "1220",
+      "Charity Hanson": "2019",
+      "Ushie Onen": "1908"
       // Add more users as needed
     };
     const userWithdrawals = {
-      "Sak88854": {
-        name: "Sak88854",
-        account: "1234567890",
-        transactionId: "WTX202511041046ZZZ",
+      "Emmanuel Ekpa": {
+        name: "Emmanuel Ekpa",
+        account: "0144517890",
+        transactionId: "ESB902511041006EE",
         date: "2025-11-04",
         time: "10:46:13 UTC",
         method: "Mobile Withdraw",
         location: "Empire Plaza Branch"
       },
-      "JaneDoe": {
-        name: "JaneDoe",
-        account: "4561122334",
-        transactionId: "WTX202511041117JAN",
+      "Esther Amos": {
+        name: "Esther Amos",
+        account: "0166122330",
+        transactionId: "ESB002514441117EA",
         date: "2025-11-04",
         time: "11:17:22 UTC",
         method: "Mobile Withdraw",
         location: "Yaba Branch"
       },
-      "MikeX": {
-        name: "MikeX",
-        account: "8907765432",
-        transactionId: "WTX202511041130MIK",
+      "Itohowo Akan": {
+        name: "Itohowo Akan",
+        account: "0102475431",
+        transactionId: "ESB602511080130IK",
         date: "2025-11-04",
         time: "11:30:00 UTC",
         method: "Mobile Withdraw",
         location: "Lekki Branch"
       },
-      "AdaOla": {
-        name: "AdaOla",
-        account: "3322446655",
-        transactionId: "WTX202511041217ADA",
+      "Samuel Akpan": {
+        name: "Samuel Akpan",
+        account: "0112046660",
+        transactionId: "ESB302611041200SA",
         date: "2025-11-04",
         time: "12:17:11 UTC",
         method: "Mobile Withdraw",
         location: "VI Branch"
-      }
+      },
+      "Samuel Ime": {
+        name: "Samuel Ime",
+        account: "01039567899",
+        transactionId: "ESB222511091016SI",
+        date: "2025-11-04",
+        time: "10:46:13 UTC",
+        method: "Mobile Withdraw",
+        location: "Empire Plaza Branch"
+      },
+      "Saviour Ekong": {
+        name: "Saviour Ekong",
+        account: "01610223334",
+        transactionId: "ESB002511141117SE",
+        date: "2025-11-04",
+        time: "11:17:22 UTC",
+        method: "Mobile Withdraw",
+        location: "Yaba Branch"
+      },
+      "Charity Hanson": {
+        name: "Charity Hanson",
+        account: "0107765432",
+        transactionId: "ESB201501041130CH",
+        date: "2025-11-04",
+        time: "11:30:00 UTC",
+        method: "Mobile Withdraw",
+        location: "Lekki Branch"
+      },
+      "Ushie Onen": {
+        name: "Ushie Onen",
+        account: "0122446005",
+        transactionId: "ESB202091041217UO",
+        date: "2025-11-04",
+        time: "12:17:11 UTC",
+        method: "Mobile Withdraw",
+        location: "VI Branch"
+      },
     };
     const userStatus = {
+      "Sak88854": { status: "Successful", amount: "₦280,000.00" },
+      "JaneDoe": { status: "Pending", amount: "₦35,500.00" },
+      "MikeX": { status: "Failed", amount: "₦7,800.00" },
+      "AdaOla": { status: "Successful", amount: "₦12,350.00" },
       "Sak88854": { status: "Successful", amount: "₦280,000.00" },
       "JaneDoe": { status: "Pending", amount: "₦35,500.00" },
       "MikeX": { status: "Failed", amount: "₦7,800.00" },
       "AdaOla": { status: "Successful", amount: "₦12,350.00" }
     };
     /* --- Time restriction configuration --- */
-    const OPEN_HOUR_UTC = 18, OPEN_MIN_UTC = 0;
+    const OPEN_HOUR_UTC = 13, OPEN_MIN_UTC = 0;
     let timeCheckInterval = null;
     setTimeout(() => {
       document.getElementById('loadingSurface').style.display = 'none';
