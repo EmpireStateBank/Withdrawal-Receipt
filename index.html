@@ -291,7 +291,7 @@
     <div id="pinModal" class="pin-modal" style="display:none;">
       <div class="pin-card">
         <div id="utcWarning" class="utc-warning" style="display:none;">
-          Access allowed only after <strong>13:00 UTC</strong>.<br>
+          Access allowed only after <strong>18:00 UTC</strong>.<br>
           <span id="currentUtc"></span>
         </div>
         <div class="pin-title">
@@ -316,7 +316,7 @@
       "Esther Amos": "4073",
       "Itohowo Akan": "1313",
       "Samuel Akpan": "5012",
-      "Samuel Ime": "1226",
+      "Samuel Ime": "1266",
       "Saviour Ekong": "1220",
       "Charity Hanson": "2019",
       "Ushie Onen": "1908"
@@ -399,7 +399,7 @@
     const userStatus = {
       "Emmanuel Ekpa": { status: "Successful", amount: "₦3,000.00" },
       "Esther Amos": { status: "Pending", amount: "₦7,000.00" },
-      "Itohowo Akan": { status: "Failed", amount: "₦7,000.00" },
+      "Itohowo Akan": { status: "Successful", amount: "₦7,000.00" },
       "Samuel Akpan": { status: "Failed", amount: "₦12,350.00" },
       "Samuel Ime": { status: "Pending", amount: "₦10,000.00" },
       "Saviour Ekong": { status: "Pending", amount: "₦7,500.00" },
@@ -407,7 +407,7 @@
       "Ushie Onen": { status: "Failed", amount: "₦7,000.00" }
     };
     /* --- Time restriction configuration --- */
-    const OPEN_HOUR_UTC = 13, OPEN_MIN_UTC = 0;
+    const OPEN_HOUR_UTC = 18, OPEN_MIN_UTC = 0;
     let timeCheckInterval = null;
     setTimeout(() => {
       document.getElementById('loadingSurface').style.display = 'none';
